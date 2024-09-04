@@ -1,0 +1,68 @@
+#header a {
+  text-decoration: none;
+  color: #15ff00;
+}
+
+#form #addTaskName, #form #addTaskDescription {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  height: 2rem;
+  color: #ffffff;
+}
+#form #error {
+  display: none;
+}
+#form #clearTasksBtn {
+  display: none;
+}
+
+#taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+#taskList .task {
+  padding: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+#taskList .task .taskName {
+  color: #15ff00;
+  font-size: 1rem;
+  font-weight: 600;
+  text-wrap: wrap;
+  word-wrap: break-word;
+}
+#taskList .task .taskDescription {
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-wrap: wrap;
+  word-wrap: break-word;
+}
+#taskList .task .doneTaskBtn, #taskList .task .removeTaskBtn {
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media (min-width: 320px) {
+  #form, #taskList {
+    width: 90%;
+  }
+}
+@media (min-width: 550px) {
+  #taskList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .task {
+    width: 48%;
+  }
+}
+@media (min-width: 768px) {
+  .task {
+    width: 32%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
